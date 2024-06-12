@@ -24,6 +24,9 @@ getorder(order, strArray);
 
 /* Demonstrates functionality in console */
 
+groupedArr = [];
 for(const key in order){
-    console.log(key,order[key],);
+    groupedArr.push(key,': ', order[key]);
 };
+
+console.log(...groupedArr);
